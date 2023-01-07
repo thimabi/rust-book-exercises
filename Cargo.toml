@@ -1,3 +1,10 @@
 [workspace]
 
-members = ["hello_cargo", "guessing_game", "variables", "functions", "branches"]
+members = [
+  "hello_cargo",
+  "guessing_game",
+  "variables",
+  "functions",
+  "branches",
+  "loops",
+]
