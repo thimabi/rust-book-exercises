@@ -9,4 +9,5 @@ members = [
   "loops",
   "ownership",
   "ownership_functions",
+  "references_borrowing",
 ]
