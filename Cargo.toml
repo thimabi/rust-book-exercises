@@ -10,4 +10,5 @@ members = [
   "ownership",
   "ownership_functions",
   "references_borrowing",
+  "slices",
 ]
