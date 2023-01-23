@@ -12,4 +12,5 @@ members = [
   "references_borrowing",
   "slices",
   "structs",
+  "rectangles",
 ]
