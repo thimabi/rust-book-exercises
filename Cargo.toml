@@ -16,4 +16,5 @@ members = [
   "rectangles_methods",
   "enums",
   "enums_match",
+  "modules",
 ]
