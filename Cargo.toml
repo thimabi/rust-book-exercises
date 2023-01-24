@@ -17,4 +17,5 @@ members = [
   "enums",
   "enums_match",
   "modules",
+  "modules_restaurant",
 ]
