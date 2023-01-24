@@ -13,4 +13,5 @@ members = [
   "slices",
   "structs",
   "rectangles",
+  "rectangles_methods",
 ]

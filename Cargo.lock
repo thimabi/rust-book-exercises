@@ -97,6 +97,10 @@ name = "rectangles"
 version = "0.1.0"
 
 [[package]]
+name = "rectangles_methods"
+version = "0.1.0"
+
+[[package]]
 name = "references_borrowing"
 version = "0.1.0"
 
