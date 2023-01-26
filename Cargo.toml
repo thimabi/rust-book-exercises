@@ -21,4 +21,5 @@ members = [
     "generics",
     "traits",
     "lifetimes",
+    "tests",
 ]
