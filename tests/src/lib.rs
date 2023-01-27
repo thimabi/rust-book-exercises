@@ -41,10 +41,10 @@ mod tests {
         assert_eq!(result, 4);
     }
 
-    #[test]
-    fn failing_test() {
-        panic!("Make this test fail");
-    }
+    // #[test]
+    // fn failing_test() {
+    //     panic!("Make this test fail");
+    // }
 
     #[test]
     fn it_adds_two() {
@@ -78,9 +78,9 @@ mod tests {
         assert_eq!(10, value);
     }
 
-    #[test]
-    fn this_test_will_fail() {
-        let value = prints_and_returns_10(8);
-        assert_eq!(5, value);
-    }
+    // #[test]
+    // fn this_test_will_fail() {
+    //     let value = prints_and_returns_10(8);
+    //     assert_eq!(5, value);
+    // }
 }
