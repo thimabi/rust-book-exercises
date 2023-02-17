@@ -1,3 +1,6 @@
+use std::thread;
+use std::time::Duration;
+
 #[derive(Debug, PartialEq, Copy, Clone)]
 enum ShirtColor {
     Red,
@@ -50,8 +53,6 @@ fn main() {
         user_pref2, giveaway2
     );
 
-    use std::thread;
-    use std::time::Duration;
     let expensive_closure = |num: u64| -> u64 {
         println!("calculating slowly...");
         thread::sleep(Duration::from_secs(num));
@@ -80,4 +81,45 @@ fn main() {
 
     borrows_mutably();
     println!("After calling closure: {:?}", list);
+
+    // Moving to new thread
+    let list = vec![1, 2, 3];
+    println!("Before defining closure: {:?}", list);
+    thread::spawn(move || println!("From thread: {:?}", list))
+        .join()
+        .unwrap();
+
+    let do_nothing = || println!("Closure that does nothing");
+    do_nothing();
+
+    #[derive(Debug)]
+    #[allow(dead_code, unused_variables)]
+    struct Rectangle {
+        width: u32,
+        height: u32,
+    }
+
+    let mut list = [
+        Rectangle {
+            width: 10,
+            height: 1,
+        },
+        Rectangle {
+            width: 3,
+            height: 5,
+        },
+        Rectangle {
+            width: 7,
+            height: 12,
+        },
+    ];
+
+    let mut count = 0;
+
+    list.sort_by_key(|r| {
+        count += 1;
+        r.width
+    });
+    println!("{:#?}", list);
+    println!("{count}");
 }
