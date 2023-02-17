@@ -23,4 +23,5 @@ members = [
     "lifetimes",
     "tests",
     "closures",
+    "iterators",
 ]
