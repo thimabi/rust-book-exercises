@@ -25,4 +25,5 @@ members = [
     "closures",
     "iterators",
     "boxt",
+    "deref_drop",
 ]
