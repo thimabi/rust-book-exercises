@@ -26,4 +26,6 @@ members = [
     "iterators",
     "boxt",
     "deref_drop",
+    "rc",
+    "refcell",
 ]

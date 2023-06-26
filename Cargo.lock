@@ -133,11 +133,19 @@ dependencies = [
 ]
 
 [[package]]
+name = "rc"
+version = "0.1.0"
+
+[[package]]
 name = "rectangles"
 version = "0.1.0"
 
 [[package]]
 name = "rectangles_methods"
+version = "0.1.0"
+
+[[package]]
+name = "refcell"
 version = "0.1.0"
 
 [[package]]
