@@ -28,4 +28,5 @@ members = [
     "deref_drop",
     "rc",
     "refcell",
+    "rc_plus_refcell",
 ]
