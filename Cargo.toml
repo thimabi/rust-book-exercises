@@ -30,4 +30,5 @@ members = [
     "refcell",
     "rc_plus_refcell",
     "reference_cycles",
+    "weak",
 ]
